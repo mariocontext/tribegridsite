@@ -12,28 +12,14 @@ module.exports = {
       options: {
         config: "./tailwind.js"
       }
-    },
-    {
-      use: 'gridsome-plugin-purgecss',
-    // default options, the following will be included if you don't provide anything
-    options: {
-      content: [
-          './src/**/*.vue',
-          './src/**/*.js',
-          './src/**/*.jsx',
-          './src/**/*.md'
-        ],
-        extractor: TailwindExtractor,
-        extensions: ['vue', 'js', 'jsx', 'md']
-    }
     }
   ]
 
-    // default extractor
-  class TailwindExtractor {
+  // default extractor
+  /* class TailwindExtractor {
     static extract(content) {
       return content.match(/[A-z0-9-:\/]+/g) || []
     }
   }
-
+  */
 };
