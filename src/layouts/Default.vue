@@ -1,7 +1,9 @@
 <template>
   <div class="layout">
     <header class="header" aria-role="banner">
-      <span>Tribe Talent</span>
+      <span>
+        <TribeLogo />
+      </span>
       <nav class="nav" aria-role="navigation">
         <ul>
           <li>
@@ -100,6 +102,16 @@ query {
   }
 }
 </static-query>
+
+<script>
+import TribeLogo from "~/components/TribeLogo.vue";
+
+export default {
+  components: {
+    TribeLogo
+  }
+};
+</script>
 
 <style>
 </style>

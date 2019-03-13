@@ -9,6 +9,11 @@
           Tribe makes Hiring Easier by directly connecting companies to
           tech+creative talent
         </p>
+        <g-image
+          src="~/assets/images/misc/two-people.jpeg"
+          width="320"
+          alt="woman speaking to a group of people"
+        />
         <g-link class="nav__link" to="/hire">Make it Easy</g-link>
       </section>
 
@@ -18,6 +23,11 @@
           Tribe helps tech+creative professionals find consistent work and pay
           by joining a community of highly motivated professionals.
         </p>
+        <g-image
+          src="~/assets/images/misc/dexter.jpeg"
+          width="320"
+          alt="man looks outward"
+        />
         <g-link class="nav__link" to="/join">Earn More</g-link>
       </section>
 
@@ -29,12 +39,18 @@
         </p>
 
         <MiniBio>
-          <span slot="member-name">Mario Noble</span>
-          <span slot="member-location">Los Angeles, CA </span>
-          <span slot="member-role">Sr UX Designer</span>
-          <span slot="member-skill-one">Visual Design</span>
-          <span slot="member-skill-two">Information Architecture</span>
-          <span slot="member-skill-three">Prototyping</span>
+          <span slot="member-name">Jeremy</span>
+          <span slot="member-location">Baltimore, MD</span>
+          <span slot="member-role">Sr Developer</span>
+          <span slot="member-skill-one">Elixir</span>
+          <span slot="member-skill-two">Phoenix</span>
+          <span slot="member-skill-three">React</span>
+          <span slot="member-image"
+            ><g-image
+              src="~/assets/images/misc/jeremy.png"
+              width="320"
+              alt="man working on laptop "
+          /></span>
         </MiniBio>
       </section>
 
@@ -60,7 +76,12 @@
         <span>Testimonial Logo</span>
         <p>Testimonial text</p>
         <span>Org Logo</span>
-        <span>Org Person image</span>
+        <span
+          ><g-image
+            src="~/assets/images/misc/Avatar4.jpg"
+            alt="Person smiling"
+            width="120"
+        /></span>
       </section>
 
       <section>

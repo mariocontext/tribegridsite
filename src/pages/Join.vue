@@ -6,6 +6,13 @@
         Tribe helps you land great tech + creative roles at companies looking to
         hire top talent.
       </p>
+      <div>
+        <g-image
+          src="~/assets/images/misc/DSC_0460.png"
+          alt="Woman smiling"
+          width="320"
+        />
+      </div>
     </section>
 
     <ContactActions />
