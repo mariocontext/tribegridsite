@@ -75,7 +75,12 @@
       <section>
         <span>Testimonial Logo</span>
         <p>Testimonial text</p>
-        <span>Org Logo</span>
+        <span
+          ><g-image
+            src="~/assets/images/external_brand_logos/Colab_logo.png"
+            alt="Colab"
+            width="50"
+        /></span>
         <span
           ><g-image
             src="~/assets/images/misc/Avatar4.jpg"
