@@ -4,61 +4,80 @@
     <!-- Learn how to use images here: https://gridsome.org/docs/images -->
 
     <main>
-    <section>
-      <h1>Making Hiring Easy</h1>
-      <p>Tribe makes hiring your next designer + developer fast, easy and transparent! Learn More Today</p>
-    </section>
-    <section>
-      <h2>How Tribe is Making Hiring Easy</h2>
-        <section>
-          <h3>Post a Job for Free</h3>
-          <p>Work with our engineers to get all the placement details right. We look for more that just keywords when placing our members.</p>
-        </section>
-        <section>
-          <h3>Connect With Members</h3>
-          <p>Whether you need a team or individual contributor. Discuss placement details with pre-vetted, interested members directly on the platform. No more email back and forth.</p>
-        </section>
-        <section>
-          <h3>Simplify Payments</h3>
-          <p>Only pay for approved hours through debit, credit, or ACH deposits. We handle all the payroll, compliance, and benefits for our members.</p>
-        </section>
-        <section>
-          <h3>Interview on the Platform</h3>
-          <p>Save time and money. Sync your calendar and schedule in-person or video interviews directly from the platform.</p>
-        </section>
-        <section>
-          <h3>Track Time and Deliverables</h3>
-          <p>Easily keep up to date with weekly timecards, deliverables, and deadlines directly from the platform. </p>
-        </section>
-    </section>
 
-    <section>
-      <h2>Brands love us!</h2>
-      <ul>
-        <li>Colab</li>
-        <li>LogMeIn</li>
-        <li>Bullhorn</li>
-        <li>Arena</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Unsure About Tribe?</h2>
-      <a href="#">Let's grab coffee</a>
-    </section>
-
-    <aside>
-      <h2>Our Blog</h2>
       <section>
-        <h3>Learn the top 5 reasons why to join a worker cooperative!</h3>
-        <a href="#">Learn More About Cooperatives</a>
+        <h1>Hiring is Hard</h1>
+        <p>Tribe makes Hiring Easier by directly connecting companies to tech+creative talent</p>
+        <a href="#">Make it Easy</a>
       </section>
+
       <section>
-        <h3>How Tribe is helping Tech + Creative professionals earn more ?</h3>
-        <a href="#">Discover Tribes Story + Mission</a>
+        <h1>Freelancing is harder</h1>
+        <p>Tribe helps tech+creative professionals find consistent work and pay by joining a community of highly motivated professionals.</p>
+        <a href="#">Earn More</a>
       </section>
-      
-    </aside>
+
+      <section>
+        <h2>Find great talent</h2>
+        <p>Tribe is the only worker owned staffing platform. Find local and vetted talent for your team without the overhead.</p>
+
+        <div class="mini-bio">
+          <h3>Name</h3>
+          <span>City, ST</span>
+          <span>Title</span>
+          <div>
+            <ul>
+              <li>Skill</li>
+              <li>Skill</li>
+            </ul>
+            <p>image here?</p>
+            <a href="#">Schedule a call</a>
+          </div>
+        </div>
+
+        <div>
+          <h2>Find great jobs</h2>
+          <p>Tribe is the only worker owned staffing platform. Find local and remote vetted talent for your team without the overhead.</p>
+          <ul>
+            <li>Skill</li>
+            <li>Skill</li>
+            <li>Skill</li>
+            <li>Skill</li>
+            <li>Skill</li>
+            <li>Skill</li>
+            <li>Skill</li>
+            <li>Skill</li>
+          </ul>
+          <a href="#">Find more jobs</a>
+        </div>
+
+      </section>
+
+      <section>
+        <h2>How it works</h2>
+        <div>
+          Video goes here
+        </div>
+
+        <HireBenefits />
+
+      </section>
+
+      <section>
+        <span>Testimonial Logo</span>
+        <p>Testimonial text</p>
+        <span>Org Logo</span>
+        <span>Org Person image</span>
+      </section>
+
+      <section>
+        <h2>Questions?</h2>
+        <p>Schedule a call to get started</p>
+      </section>
+
+      <BrandLove />
+
+      <OurBlog />
 
     </main>
 
@@ -66,9 +85,18 @@
 </template>
 
 <script>
+import HireBenefits from "~/components/HireBenefits.vue";
+import BrandLove from "~/components/BrandLove.vue";
+import OurBlog from "~/components/OurBlog.vue";
+
 export default {
   metaInfo: {
     title: "Welcome"
+  },
+  components: {
+    HireBenefits,
+    BrandLove,
+    OurBlog
   }
 };
 </script>
