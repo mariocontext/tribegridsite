@@ -77,7 +77,7 @@
               <g-link class="nav__link" to="/terms">Terms of use</g-link>
             </li>
             <li>
-              <g-link class="nav__link" to="/privary">Privacy policy</g-link>
+              <g-link class="nav__link" to="/privacy">Privacy policy</g-link>
             </li>
             <li>
               <a

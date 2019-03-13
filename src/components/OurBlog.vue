@@ -1,8 +1,10 @@
 <template>
   <aside role="secondary">
+    <!-- TODO: add active links -->
     <h2>Our blog</h2>
     <section>
-      <h3>Learn the top 5 reasons why to join a worker cooperative!</h3>
+      <h3>Learn the top 7 reasons why to join a worker cooperative!</h3>
+
       <a href="#">Learn More About Cooperatives</a>
     </section>
     <section>

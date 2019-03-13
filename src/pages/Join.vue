@@ -110,7 +110,7 @@
             maxlength="256"
             name="join-skills"
             data-name="Join Skills"
-            placeholder="Framer, Figma, Figgy Pudding.."
+            placeholder="Framer, Figma, Paper"
             id="join-skills"
           />
         </div>

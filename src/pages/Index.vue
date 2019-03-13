@@ -9,7 +9,7 @@
           Tribe makes Hiring Easier by directly connecting companies to
           tech+creative talent
         </p>
-        <a href="#">Make it Easy</a>
+        <g-link class="nav__link" to="/hire">Make it Easy</g-link>
       </section>
 
       <section>
@@ -18,7 +18,7 @@
           Tribe helps tech+creative professionals find consistent work and pay
           by joining a community of highly motivated professionals.
         </p>
-        <a href="#">Earn More</a>
+        <g-link class="nav__link" to="/join">Earn More</g-link>
       </section>
 
       <section>
@@ -90,7 +90,4 @@ export default {
 </script>
 
 <style>
-.home-links a {
-  margin-right: 1rem;
-}
 </style>
