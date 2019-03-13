@@ -1,5 +1,5 @@
 <template>
-  <aside>
+  <aside role="secondary">
     <h2>Our blog</h2>
     <section>
       <h3>Learn the top 5 reasons why to join a worker cooperative!</h3>
