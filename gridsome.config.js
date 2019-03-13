@@ -15,7 +15,7 @@ module.exports = {
     }
   ]
 
-  // default extractor
+  // default extractor - currently has problems TODO:
   /* class TailwindExtractor {
     static extract(content) {
       return content.match(/[A-z0-9-:\/]+/g) || []
