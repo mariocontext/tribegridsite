@@ -28,19 +28,7 @@
           vetted talent for your team without the overhead.
         </p>
 
-        <div class="mini-bio">
-          <h3>Name</h3>
-          <span>City, ST </span>
-          <span>Title</span>
-          <div>
-            <ul>
-              <li>Skill</li>
-              <li>Skill</li>
-            </ul>
-            <p>image here?</p>
-            <a href="#">Schedule a call</a>
-          </div>
-        </div>
+        <MiniBio />
       </section>
 
       <RoleListing />
@@ -85,6 +73,7 @@ import HireBenefits from "~/components/HireBenefits.vue";
 import BrandLove from "~/components/BrandLove.vue";
 import OurBlog from "~/components/OurBlog.vue";
 import RoleListing from "~/components/RoleListing.vue";
+import MiniBio from "~/components/MiniBio.vue";
 
 export default {
   metaInfo: {
@@ -94,7 +83,8 @@ export default {
     HireBenefits,
     BrandLove,
     OurBlog,
-    RoleListing
+    RoleListing,
+    MiniBio
   }
 };
 </script>
