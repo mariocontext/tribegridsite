@@ -65,7 +65,14 @@
       <section>
         <h2>How it works</h2>
         <div>
-          Video goes here
+          <iframe
+            class="embedly-embed"
+            src="//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FdW4NknlRBhs%3Ffeature%3Doembed&amp;url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DdW4NknlRBhs&amp;image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FdW4NknlRBhs%2Fhqdefault.jpg&amp;key=96f1f04c5f4143bcb0f2e68c87d65feb&amp;type=text%2Fhtml&amp;schema=youtube"
+            scrolling="no"
+            allow="autoplay; fullscreen"
+            allowfullscreen="true"
+            frameborder="0"
+          ></iframe>
         </div>
 
         <HireBenefits />

@@ -8,9 +8,6 @@
             <g-link class="nav__link" to="/">Home</g-link>
           </li>
           <li>
-            <g-link class="nav__link" to="/about">About</g-link>
-          </li>
-          <li>
             <g-link class="nav__link" to="/hire">Hire</g-link>
           </li>
           <li>
@@ -73,19 +70,20 @@
       </section>
 
       <section>
+        <h3>Good to Know</h3>
         <nav>
           <ul>
             <li>
-              <g-link class="nav__link" to="/">Home</g-link>
+              <g-link class="nav__link" to="/terms">Terms of use</g-link>
             </li>
             <li>
-              <g-link class="nav__link" to="/about">About</g-link>
+              <g-link class="nav__link" to="/privary">Privacy policy</g-link>
             </li>
             <li>
-              <g-link class="nav__link" to="/hire">Hire</g-link>
-            </li>
-            <li>
-              <g-link class="nav__link" to="/join">Join</g-link>
+              <a
+                href="https://app.prosperworks.com/public/meeting-scheduler/The%20Staffing%20Cooperative/joseph/253546:d9f04345-3420-4d5c-823d-c50395d7022e"
+                >Contact Us</a
+              >
             </li>
           </ul>
         </nav>
