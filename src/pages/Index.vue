@@ -28,7 +28,14 @@
           vetted talent for your team without the overhead.
         </p>
 
-        <MiniBio />
+        <MiniBio>
+          <span slot="member-name">Mario Noble</span>
+          <span slot="member-location">Los Angeles, CA </span>
+          <span slot="member-role">Sr UX Designer</span>
+          <span slot="member-skill-one">Visual Design</span>
+          <span slot="member-skill-two">Information Architecture</span>
+          <span slot="member-skill-three">Prototyping</span>
+        </MiniBio>
       </section>
 
       <RoleListing />

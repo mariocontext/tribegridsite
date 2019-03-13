@@ -17,8 +17,23 @@
         the best jobs in the Tech + Creative industries
       </p>
 
-      <JobCard />
-      <JobCard />
+      <JobCard>
+        <span slot="job-position">React Developer</span>
+        <span slot="job-company">XYZ Limited</span>
+        <span slot="job-location">Atlanta, GA</span>
+        <span slot="job-locale">Onsite</span>
+        <span slot="job-posted-time">3 Days</span>
+        <span slot="job-contract-type">Contractor</span>
+      </JobCard>
+
+      <JobCard>
+        <span slot="job-position">UI Designer</span>
+        <span slot="job-company">Faraway LLC</span>
+        <span slot="job-location">Dayton, OH</span>
+        <span slot="job-locale">Remote</span>
+        <span slot="job-posted-time">10 Days</span>
+        <span slot="job-contract-type">Full Time</span>
+      </JobCard>
     </section>
 
     <BrandLove />
