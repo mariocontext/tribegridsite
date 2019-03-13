@@ -19,6 +19,7 @@
       </nav>
     </header>
     <slot/>
+    <footer>Footer info goes here</footer>
   </div>
 </template>
 
