@@ -6,6 +6,13 @@
         Tribe makes hiring your next designer + developer fast, easy and
         transparent! Learn More Today
       </p>
+      <div>
+        <g-image
+          src="~/assets/images/misc/paying-attention.jpg"
+          alt="Man listening"
+          width="320"
+        />
+      </div>
     </section>
 
     <ContactActions />
