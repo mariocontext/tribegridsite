@@ -30,6 +30,10 @@
         industries + Earn More
       </p>
 
+      <HireBenefits />
+
+      <RoleListing />
+
       <form
         id="join-email-form"
         name="join-email-form"
@@ -124,10 +128,12 @@
 </template>
 
 <script>
+import HireBenefits from "~/components/HireBenefits.vue";
 import BrandLove from "~/components/BrandLove.vue";
 import OurBlog from "~/components/OurBlog.vue";
 import ContactActions from "~/components/ContactActions.vue";
 import JobCard from "~/components/JobCard.vue";
+import RoleListing from "~/components/RoleListing.vue";
 
 export default {
   metaInfo: {
@@ -137,7 +143,9 @@ export default {
     BrandLove,
     OurBlog,
     ContactActions,
-    JobCard
+    JobCard,
+    RoleListing,
+    HireBenefits
   }
 };
 </script>

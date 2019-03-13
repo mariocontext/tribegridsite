@@ -30,7 +30,7 @@
 
         <div class="mini-bio">
           <h3>Name</h3>
-          <span>City, ST</span>
+          <span>City, ST </span>
           <span>Title</span>
           <div>
             <ul>
@@ -41,26 +41,9 @@
             <a href="#">Schedule a call</a>
           </div>
         </div>
-
-        <div>
-          <h2>Find great jobs</h2>
-          <p>
-            Tribe is the only worker owned staffing platform. Find local and
-            remote vetted talent for your team without the overhead.
-          </p>
-          <ul>
-            <li>Skill</li>
-            <li>Skill</li>
-            <li>Skill</li>
-            <li>Skill</li>
-            <li>Skill</li>
-            <li>Skill</li>
-            <li>Skill</li>
-            <li>Skill</li>
-          </ul>
-          <a href="#">Find more jobs</a>
-        </div>
       </section>
+
+      <RoleListing />
 
       <section>
         <h2>How it works</h2>
@@ -101,6 +84,7 @@
 import HireBenefits from "~/components/HireBenefits.vue";
 import BrandLove from "~/components/BrandLove.vue";
 import OurBlog from "~/components/OurBlog.vue";
+import RoleListing from "~/components/RoleListing.vue";
 
 export default {
   metaInfo: {
@@ -109,7 +93,8 @@ export default {
   components: {
     HireBenefits,
     BrandLove,
-    OurBlog
+    OurBlog,
+    RoleListing
   }
 };
 </script>
