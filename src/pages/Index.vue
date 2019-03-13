@@ -1,25 +1,32 @@
 <template>
   <Layout>
-    
     <!-- Learn how to use images here: https://gridsome.org/docs/images -->
 
     <main>
-
       <section>
         <h1>Hiring is Hard</h1>
-        <p>Tribe makes Hiring Easier by directly connecting companies to tech+creative talent</p>
+        <p>
+          Tribe makes Hiring Easier by directly connecting companies to
+          tech+creative talent
+        </p>
         <a href="#">Make it Easy</a>
       </section>
 
       <section>
         <h1>Freelancing is harder</h1>
-        <p>Tribe helps tech+creative professionals find consistent work and pay by joining a community of highly motivated professionals.</p>
+        <p>
+          Tribe helps tech+creative professionals find consistent work and pay
+          by joining a community of highly motivated professionals.
+        </p>
         <a href="#">Earn More</a>
       </section>
 
       <section>
         <h2>Find great talent</h2>
-        <p>Tribe is the only worker owned staffing platform. Find local and vetted talent for your team without the overhead.</p>
+        <p>
+          Tribe is the only worker owned staffing platform. Find local and
+          vetted talent for your team without the overhead.
+        </p>
 
         <div class="mini-bio">
           <h3>Name</h3>
@@ -37,7 +44,10 @@
 
         <div>
           <h2>Find great jobs</h2>
-          <p>Tribe is the only worker owned staffing platform. Find local and remote vetted talent for your team without the overhead.</p>
+          <p>
+            Tribe is the only worker owned staffing platform. Find local and
+            remote vetted talent for your team without the overhead.
+          </p>
           <ul>
             <li>Skill</li>
             <li>Skill</li>
@@ -50,7 +60,6 @@
           </ul>
           <a href="#">Find more jobs</a>
         </div>
-
       </section>
 
       <section>
@@ -60,7 +69,6 @@
         </div>
 
         <HireBenefits />
-
       </section>
 
       <section>
@@ -78,9 +86,7 @@
       <BrandLove />
 
       <OurBlog />
-
     </main>
-
   </Layout>
 </template>
 
