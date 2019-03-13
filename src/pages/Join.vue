@@ -10,6 +10,17 @@
 
     <ContactActions />
 
+    <section>
+      <h2>New Jobs Found on Tribe</h2>
+      <p>
+        When you become a member with Tribe, you’ll be able to apply to some of
+        the best jobs in the Tech + Creative industries
+      </p>
+
+      <JobCard />
+      <JobCard />
+    </section>
+
     <BrandLove />
 
     <section>
@@ -116,6 +127,7 @@
 import BrandLove from "~/components/BrandLove.vue";
 import OurBlog from "~/components/OurBlog.vue";
 import ContactActions from "~/components/ContactActions.vue";
+import JobCard from "~/components/JobCard.vue";
 
 export default {
   metaInfo: {
@@ -124,7 +136,8 @@ export default {
   components: {
     BrandLove,
     OurBlog,
-    ContactActions
+    ContactActions,
+    JobCard
   }
 };
 </script>
