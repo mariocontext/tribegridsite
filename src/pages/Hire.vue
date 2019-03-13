@@ -8,14 +8,7 @@
       </p>
     </section>
 
-    <section>
-      <ul>
-        <li><a href="#">Email us</a></li>
-        <li><a href="#">Call us</a></li>
-        <li><a href="#">Let's grab coffee</a></li>
-        <li><a href="#">Text us</a></li>
-      </ul>
-    </section>
+    <ContactActions />
 
     <section>
       <h2>Get in touch</h2>
@@ -147,6 +140,7 @@
 import HireBenefits from "~/components/HireBenefits.vue";
 import BrandLove from "~/components/BrandLove.vue";
 import OurBlog from "~/components/OurBlog.vue";
+import ContactActions from "~/components/ContactActions.vue";
 
 export default {
   metaInfo: {
@@ -155,7 +149,8 @@ export default {
   components: {
     HireBenefits,
     BrandLove,
-    OurBlog
+    OurBlog,
+    ContactActions
   }
 };
 </script>
