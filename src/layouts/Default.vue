@@ -15,6 +15,12 @@
           <li>
             <g-link class="nav__link" to="/join">Join</g-link>
           </li>
+          <li>
+            <a
+              href="https://app.prosperworks.com/public/meeting-scheduler/The%20Staffing%20Cooperative/joseph/253546:d9f04345-3420-4d5c-823d-c50395d7022e"
+              >Contact Us</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
