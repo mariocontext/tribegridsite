@@ -1,0 +1,31 @@
+<template>
+  <section>
+    <h2>Brands love us!</h2>
+    <ul>
+      <li>
+        <g-image
+          src="~/assets/images/external_brand_logos/Colab_logo.png"
+          alt="Colab"
+        />
+      </li>
+      <li>
+        <g-image
+          src="~/assets/images/external_brand_logos/LogMeIn_logo.png"
+          alt="LogMeIn"
+        />
+      </li>
+      <li>
+        <g-image
+          src="~/assets/images/external_brand_logos/Bullhorn_logo.png"
+          alt="Bullhorn"
+        />
+      </li>
+      <li>
+        <g-image
+          src="~/assets/images/external_brand_logos/Arena_logo.png"
+          alt="Arena"
+        />
+      </li>
+    </ul>
+  </section>
+</template>

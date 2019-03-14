@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="89px" height="107px" viewBox="0 0 89 107" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Group 3@0.5x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0.5 0 88.5 0 88.5 107 0.5 107"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Traibe-/-Brand-Guideline-/-Logos" transform="translate(-931.000000, -742.000000)">
+            <g id="Group-3" transform="translate(931.000000, 742.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <path d="M46.8310794,107 L40.9445782,107 L77.8804652,10.9877743 C76.425585,10.3954102 73.1559989,9.29838256 65.8995115,7.62745411 C56.6772224,5.50417486 42.4726697,4.10404145 25.6184905,6.94277348 L41.7452296,20.216346 L21.3130421,36.8271596 C30.8904839,35.5139575 46.6028782,34.5430958 60.9258151,37.9349574 L58.7707544,42.9600516 C36.4319574,37.9880394 12.4217616,43.8593681 12.18032,43.9186045 L0.5,46.8150344 L33.2472652,20.1909589 L13.5417389,3.97172115 L18.9219917,2.78776217 C57.8711899,-5.78305452 85.1540872,8.08903655 86.296651,8.6844779 L88.5,9.83074098 L46.8310794,107 Z" id="Fill-1" fill="#231F20" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>
