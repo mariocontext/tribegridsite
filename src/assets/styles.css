@@ -36,8 +36,100 @@
   * @import "components/forms";
   */
 
-.my-special-class {
-  @apply tw-bg-grey;
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  @apply tw-text-tertiary;
+}
+
+body {
+  /*
+  background-image: linear-gradient(
+      175deg,
+      rgb(0, 31, 72),
+      rgb(0, 31, 71) 29%,
+      rgb(24, 242, 178) 45%,
+      rgb(255, 255, 255) 93%
+    ),
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", "Roboto", sans-serif;
+  @apply tw-leading-loose;
+}
+
+h1 {
+  @apply tw-text-4xl;
+}
+
+main > section:first-child > h1:first-child {
+  @apply tw-text-secondary;
+}
+
+h2 {
+  @apply tw-text-3xl;
+}
+
+h3 {
+  @apply tw-text-2xl;
+}
+
+h4 {
+  @apply tw-text-xl;
+}
+
+h5 {
+  @apply tw-text-lg;
+}
+
+h5 {
+  @apply tw-text-base;
+}
+
+p {
+  @apply tw-leading-normal;
+}
+
+ul {
+  @apply tw-list-reset;
+}
+
+a {
+  @apply tw-text-tertiary;
+}
+label {
+  @apply tw-block tw-text-sm tw-font-medium tw-mt-4 tw-mb-2;
+}
+input[text],
+select {
+  @apply tw-border tw-border-solid tw-border-tertiary tw-rounded tw-h-8;
+}
+
+button,
+.btn {
+  font-family: "Montserrat", "Roboto", sans-serif;
+  @apply tw-inline-block tw-p-4 tw-mt-4 tw-mb-4 tw-text-tertiary tw-no-underline tw-capitalize tw-text-center tw-text-xl tw-font-medium tw-cursor-pointer;
+}
+
+button:hover,
+.btn:hover {
+  @apply tw-text-blue-darker;
+}
+
+.btn-primary {
+  @apply tw-text-white tw-bg-tertiary tw-capitalize tw-border tw-border-solid tw-border-white tw-rounded-lg tw-shadow-md;
+  transition: background 0.5s ease-in;
+}
+
+.btn-primary:hover {
+  @apply tw-text-white tw-bg-grey-darkest;
 }
 
 /**
@@ -64,7 +156,3 @@
   * @import "utilities/background-patterns";
   * @import "utilities/skew-transforms";
   */
-
-h1 {
-  font-family: "Montserrat", "Roboto", sans-serif;
-}

@@ -1,5 +1,5 @@
 <template>
-  <div class="layout">
+  <div class="layout tw-container tw-mx-auto">
     <header class="header" aria-role="banner">
       <span>
         <TribeLogo />
@@ -49,12 +49,18 @@
             placeholder="Jane@email.com"
             id="subscribe-email"
             required=""
-          /><input type="submit" value="Get Updates" data-wait="In the mail!" />
+          /><input
+            type="submit"
+            value="Get Updates"
+            data-wait="In the mail!"
+            class="btn btn-primary"
+          />
         </form>
         <p>
           Call:
           <a
             href="https://app.prosperworks.com/public/meeting-scheduler/The%20Staffing%20Cooperative/joseph/253546:d9f04345-3420-4d5c-823d-c50395d7022e/2019-03-13"
+            class="btn btn-primary"
             >Set up a call</a
           >
         </p>
@@ -79,7 +85,7 @@
         <nav>
           <ul>
             <li>
-              <g-link class="nav__link" to="/terms">Terms of use</g-link>
+              <g-link class="nav__link btn" to="/terms">Terms of use</g-link>
             </li>
             <li>
               <g-link class="nav__link" to="/privacy">Privacy policy</g-link>

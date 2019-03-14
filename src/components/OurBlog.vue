@@ -4,7 +4,7 @@
     <h2>Our blog</h2>
     <section>
       <h3>Learn the top 7 reasons why to join a worker cooperative!</h3>
-      <a href="#">Learn More About Cooperatives</a>
+      <a href="#" class="btn btn-primary">Learn More About Cooperatives</a>
       <div>
         <g-image
           src="~/assets/images/misc/coop-group.png"
@@ -15,7 +15,7 @@
     </section>
     <section>
       <h3>How Tribe is helping Tech + Creative professionals earn more ?</h3>
-      <a href="#">Discover Tribes Story + Mission</a>
+      <a href="#" class="btn btn-primary">Discover Tribes Story + Mission</a>
       <div>
         <g-image
           src="~/assets/images/misc/coop-group.png"

@@ -16,7 +16,9 @@
             alt="woman speaking to a group of people"
           />
         </div>
-        <g-link class="nav__link" to="/hire">Make it Easy</g-link>
+        <g-link class="nav__link btn btn-primary" to="/hire"
+          >Make it Easy</g-link
+        >
       </section>
 
       <section>
@@ -32,7 +34,7 @@
             alt="man looks outward"
           />
         </div>
-        <g-link class="nav__link" to="/join">Earn More</g-link>
+        <g-link class="nav__link btn btn-primary" to="/join">Earn More</g-link>
       </section>
 
       <section>
@@ -96,6 +98,11 @@
       <section>
         <h2>Questions?</h2>
         <p>Schedule a call to get started</p>
+        <a
+          href="https://app.prosperworks.com/public/meeting-scheduler/The%20Staffing%20Cooperative/joseph/253546:d9f04345-3420-4d5c-823d-c50395d7022e"
+          class="btn btn-primary"
+          >Schedule a call</a
+        >
       </section>
 
       <BrandLove />

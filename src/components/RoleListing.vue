@@ -15,6 +15,6 @@
       <li>Graphic Design</li>
       <li>Quality Assurance</li>
     </ul>
-    <a href="#">Find more jobs</a>
+    <a href="#" class="btn btn-primary">Find more jobs</a>
   </section>
 </template>

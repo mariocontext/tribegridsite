@@ -10,6 +10,6 @@
       <slot name="job-posted-time">Length of time posted</slot
       ><slot name="job-contract-type">Contract or Full</slot>
     </p>
-    <g-link class="nav__link" to="/join">Find More Jobs</g-link>
+    <g-link class="nav__link btn btn-primary" to="/join">Find More Jobs</g-link>
   </div>
 </template>
