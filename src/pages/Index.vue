@@ -9,11 +9,13 @@
           Tribe makes Hiring Easier by directly connecting companies to
           tech+creative talent
         </p>
-        <g-image
-          src="~/assets/images/misc/two-people.jpeg"
-          width="320"
-          alt="woman speaking to a group of people"
-        />
+        <div>
+          <g-image
+            src="~/assets/images/misc/two-people.jpeg"
+            width="320"
+            alt="woman speaking to a group of people"
+          />
+        </div>
         <g-link class="nav__link" to="/hire">Make it Easy</g-link>
       </section>
 
@@ -23,11 +25,13 @@
           Tribe helps tech+creative professionals find consistent work and pay
           by joining a community of highly motivated professionals.
         </p>
-        <g-image
-          src="~/assets/images/misc/dexter.jpeg"
-          width="320"
-          alt="man looks outward"
-        />
+        <div>
+          <g-image
+            src="~/assets/images/misc/dexter.jpeg"
+            width="320"
+            alt="man looks outward"
+          />
+        </div>
         <g-link class="nav__link" to="/join">Earn More</g-link>
       </section>
 

@@ -27,7 +27,9 @@
     <slot />
     <footer role="contentinfo">
       <section>
-        <div>Tribe logo goes here</div>
+        <div>
+          <TribeLogo />
+        </div>
         <p>
           Tribe is the only worker owned talent platform. Bringing ownership to
           the future of work. Subscribe to get the latest updates from the
@@ -39,11 +41,6 @@
           name="subscribe-form"
           data-name="Subscribe Form"
         >
-          <p>
-            Tribe is the only worker owned talent platform. Bringing ownership
-            to the future of work. Subscribe to get the latest updates from the
-            co-op's blog.
-          </p>
           <input
             type="email"
             maxlength="256"
