@@ -5,6 +5,7 @@
         <TribeLogo />
       </span>
       <span
+        v-on:click="showdrawer = !showdrawer"
         class="ctw-open-nav tw-inline-block tw-absolute tw-pin-r tw-pin-t tw-mt-8 tw-mr-4 tw-cursor-pointer"
       >
         <svg
@@ -35,62 +36,66 @@
           />
         </svg>
       </span>
-      <nav
-        class="nav tw-p-8 tw--ml-4 tw--mr-4 tw-flex tw-flex-col tw-items-center tw-bg-tertiary tw-justify-around tw-fixed tw-w-full tw-pin-t"
-        aria-role="navigation"
-      >
-        <span
-          class="ctw-close-nav tw-inline-block tw-absolute tw-pin-r tw-pin-t tw-mt-4 tw-mr-4 tw-cursor-pointer"
+      <transition name="slide">
+        <nav
+          v-show="showdrawer"
+          class="nav tw-p-8 tw--ml-4 tw--mr-4 tw-flex tw-flex-col tw-items-center tw-bg-tertiary tw-justify-around tw-fixed tw-w-full tw-pin-t tw-shadow-lg"
+          aria-role="navigation"
         >
-          <svg
-            width="26"
-            height="25"
-            viewBox="0 0 26 25"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
+          <span
+            v-on:click="showdrawer = !showdrawer"
+            class="ctw-close-nav tw-inline-block tw-absolute tw-pin-r tw-pin-t tw-mt-4 tw-mr-4 tw-cursor-pointer"
           >
-            <title>Close Navigation</title>
-            <line
-              x1="4.12132"
-              y1="3"
-              x2="23.3776"
-              y2="22.2562"
-              stroke="#18F2B2"
-              stroke-width="3"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <line
-              x1="3"
-              y1="22.2562"
-              x2="22.2562"
-              y2="3"
-              stroke="#18F2B2"
-              stroke-width="3"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-        </span>
-        <ul>
-          <li>
-            <g-link class="nav__link" to="/">Home</g-link>
-          </li>
-          <li>
-            <g-link class="nav__link" to="/hire">Hire</g-link>
-          </li>
-          <li>
-            <g-link class="nav__link" to="/join">Join</g-link>
-          </li>
-          <li>
-            <a
-              href="https://app.prosperworks.com/public/meeting-scheduler/The%20Staffing%20Cooperative/joseph/253546:d9f04345-3420-4d5c-823d-c50395d7022e"
-              class="tw-text-2xl tw-text-white tw-no-underline;"
-              >Contact Us</a
+            <svg
+              width="26"
+              height="25"
+              viewBox="0 0 26 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
             >
-          </li>
-        </ul>
-      </nav>
+              <title>Close Navigation</title>
+              <line
+                x1="4.12132"
+                y1="3"
+                x2="23.3776"
+                y2="22.2562"
+                stroke="#18F2B2"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <line
+                x1="3"
+                y1="22.2562"
+                x2="22.2562"
+                y2="3"
+                stroke="#18F2B2"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </span>
+          <ul>
+            <li>
+              <g-link class="nav__link" to="/">Home</g-link>
+            </li>
+            <li>
+              <g-link class="nav__link" to="/hire">Hire</g-link>
+            </li>
+            <li>
+              <g-link class="nav__link" to="/join">Join</g-link>
+            </li>
+            <li>
+              <a
+                href="https://app.prosperworks.com/public/meeting-scheduler/The%20Staffing%20Cooperative/joseph/253546:d9f04345-3420-4d5c-823d-c50395d7022e"
+                class="tw-text-2xl tw-text-white tw-no-underline;"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </transition>
     </header>
     <slot />
     <footer role="contentinfo">
@@ -186,6 +191,11 @@ import TribeLogo from "~/components/TribeLogo.vue";
 export default {
   components: {
     TribeLogo
+  },
+  data() {
+    return {
+      showdrawer: false
+    };
   }
 };
 </script>
@@ -207,5 +217,14 @@ export default {
 
 .nav li {
   @apply tw-p-6 tw-text-center;
+}
+
+.slide-enter-active,
+.slide-leave-active {
+  transition: all 0.3s ease-in-out;
+}
+.slide-enter, .slide-leave-to
+/* .slide-leave-active below version 2.1.8 */ {
+  transform: translateX(256px);
 }
 </style>
