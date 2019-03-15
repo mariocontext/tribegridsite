@@ -31,7 +31,6 @@
               <label for="hire-name">Name</label>
               <input
                 type="text"
-                maxlength="256"
                 name="hire-name"
                 data-name="Hire-Name"
                 placeholder="Jane Jones"
@@ -43,7 +42,6 @@
               <label for="hire-email">Email</label>
               <input
                 type="email"
-                maxlength="256"
                 name="Hire-Email"
                 data-name="Email"
                 placeholder="jane@tribemail.com"
@@ -56,7 +54,6 @@
               <label for="hire-phone">Phone</label>
               <input
                 type="tel"
-                maxlength="256"
                 name="hire-phone"
                 data-name="Hire Phone"
                 placeholder="1-202-123-1234"
@@ -69,7 +66,6 @@
               <label for="hire-industry">Industry</label>
               <input
                 type="text"
-                maxlength="256"
                 name="hire-industry"
                 data-name="Hire Industry"
                 id="hire-industry"
@@ -82,7 +78,6 @@
               <input
                 type="text"
                 class="w-input"
-                maxlength="256"
                 name="hire-location"
                 data-name="Hire Location"
                 id="hire-location"
@@ -105,25 +100,33 @@
             </div>
 
             <div>
-              <h4>Would you prefer call or email?</h4>
+              <h4 class="tw-pt-4">Would you prefer call or email?</h4>
 
               <input
                 type="radio"
                 id="hire-call-pref"
-                name="hire-call-pref"
+                name="hire-contact-pref"
                 value="call"
                 data-name="Hire Call"
               />
-              <label for="hire-call-pref">Call</label>
+              <label
+                for="hire-call-pref"
+                class="tw-inline-block tw-mr-4 tw-ml-2"
+                >Call</label
+              >
 
               <input
                 type="radio"
                 id="hire-email-pref"
-                name="Hire Email Pref"
+                name="hire-contact-pref"
                 value="Email"
-                data-name="hire-email-pref"
+                data-name="hire-contact-pref"
               />
-              <label for="hire-email-pref">Email</label>
+              <label
+                for="hire-email-pref"
+                class="tw-inline-block tw-mr-4 tw-ml-2"
+                >Email</label
+              >
             </div>
 
             <input type="submit" class="btn btn-primary" value="Get in Touch" />
@@ -135,10 +138,13 @@
 
       <HireBenefits />
 
-      <section>
-        <h2>Unsure about tribe?</h2>
+      <section
+        class="tw-bg-tertiary tw-text-white tw-pl-8 tw-pr-8 tw-pt-4 tw-pb-4 tw--ml-4 tw--mr-4"
+      >
+        <h3 class="tw-text-center">Unsure about tribe?</h3>
         <a
           href="https://app.prosperworks.com/public/meeting-scheduler/The%20Staffing%20Cooperative/joseph/253546:d9f04345-3420-4d5c-823d-c50395d7022e"
+          class="btn btn-primary tw-block tw-w-64 tw-mx-auto"
           >Let's grab coffee</a
         >
       </section>
@@ -147,6 +153,7 @@
     </main>
   </Layout>
 </template>
+
 
 <script>
 import HireBenefits from "~/components/HireBenefits.vue";
