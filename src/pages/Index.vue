@@ -64,16 +64,13 @@
 
       <RoleListing />
 
-      <section>
-        <h2 class="tw-text-center">How it works</h2>
-        <div>
+      <section class="tw-mt-4 tw-mb-4">
+        <h2 class="tw-text-center tw-mb-4">How it works</h2>
+        <div class="tw-text-center embed-container">
           <iframe
-            class="embedly-embed"
-            src="//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FdW4NknlRBhs%3Ffeature%3Doembed&amp;url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DdW4NknlRBhs&amp;image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FdW4NknlRBhs%2Fhqdefault.jpg&amp;key=96f1f04c5f4143bcb0f2e68c87d65feb&amp;type=text%2Fhtml&amp;schema=youtube"
-            scrolling="no"
-            allow="autoplay; fullscreen"
-            allowfullscreen="true"
+            src="https://www.youtube.com/embed/dW4NknlRBhs"
             frameborder="0"
+            allowfullscreen="true"
           ></iframe>
         </div>
 
