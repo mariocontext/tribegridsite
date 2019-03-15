@@ -39,7 +39,7 @@
       <transition name="slide">
         <nav
           v-show="showdrawer"
-          class="nav tw-p-8 tw--ml-4 tw--mr-4 tw-flex tw-flex-col tw-items-center tw-bg-tertiary tw-justify-around tw-fixed tw-w-full tw-pin-t tw-shadow-lg"
+          class="nav tw-p-8 tw--ml-4 tw--mr-4 tw-flex tw-flex-col tw-items-center tw-bg-tertiary tw-justify-around tw-fixed tw-w-full tw-pin-t tw-shadow-lg tw-z-50"
           aria-role="navigation"
         >
           <span
