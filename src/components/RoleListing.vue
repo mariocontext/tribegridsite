@@ -1,11 +1,13 @@
 <template>
   <section>
-    <h2>Find great jobs</h2>
-    <p>
+    <h2 class="tw-text-right">Find great jobs</h2>
+    <p class="tw-text-right">
       Tribe is the only worker owned staffing platform. Find local and remote
       vetted talent for your team without the overhead.
     </p>
-    <ul>
+    <ul
+      class="ctw-role-listing tw-flex tw-flex-col tw-flex-wrap tw-h-32 tw-justify-start tw-items-start"
+    >
       <li>Web Development</li>
       <li>Software Engineering</li>
       <li>UX Design</li>
@@ -18,3 +20,15 @@
     <a href="#" class="btn btn-primary">Find more jobs</a>
   </section>
 </template>
+
+<style scoped>
+.ctw-role-listing li {
+  @apply tw-bg-secondary tw-pr-2 tw-pl-2 tw-pt-1 tw-pb-1 tw-mt-2 tw-font-bold tw-max-w-xs tw-mr-2;
+}
+
+@media screen (min-width: 768) {
+  .ctw-role-listing {
+  }
+}
+</style>
+

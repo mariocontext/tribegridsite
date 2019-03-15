@@ -1,5 +1,5 @@
 <template>
-  <div class="layout tw-container tw-mx-auto">
+  <div class="layout tw-container tw-mx-auto tw-pl-4 tw-pr-4">
     <header class="header" aria-role="banner">
       <span>
         <TribeLogo />

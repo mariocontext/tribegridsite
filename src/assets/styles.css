@@ -38,7 +38,7 @@
 
 html,
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", "Roboto", sans-serif;
   @apply tw-text-tertiary;
 }
 
@@ -53,6 +53,7 @@ body {
     ),
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     */
+  @apply tw-text-xs;
 }
 
 h1,
@@ -61,7 +62,6 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat", "Roboto", sans-serif;
   @apply tw-leading-loose;
 }
 
@@ -115,7 +115,7 @@ select {
 button,
 .btn {
   font-family: "Montserrat", "Roboto", sans-serif;
-  @apply tw-inline-block tw-p-4 tw-mt-4 tw-mb-4 tw-text-tertiary tw-no-underline tw-capitalize tw-text-center tw-text-xl tw-font-medium tw-cursor-pointer;
+  @apply tw-inline-block tw-pt-2 tw-pb-2 tw-pl-4 tw-pr-4 tw-mt-4 tw-mb-4 tw-text-tertiary tw-no-underline tw-capitalize tw-text-center tw-text-base tw-font-medium tw-cursor-pointer;
 }
 
 button:hover,

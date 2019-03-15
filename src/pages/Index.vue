@@ -5,10 +5,6 @@
     <main>
       <section>
         <h1>Hiring is Hard</h1>
-        <p>
-          Tribe makes Hiring Easier by directly connecting companies to
-          tech+creative talent
-        </p>
         <div>
           <g-image
             src="~/assets/images/misc/two-people.jpeg"
@@ -16,6 +12,10 @@
             alt="woman speaking to a group of people"
           />
         </div>
+        <p class="tw-hidden md:tw-block">
+          Tribe makes Hiring Easier by directly connecting companies to
+          tech+creative talent
+        </p>
         <g-link class="nav__link btn btn-primary" to="/hire"
           >Make it Easy</g-link
         >
@@ -23,10 +23,6 @@
 
       <section>
         <h1>Freelancing is harder</h1>
-        <p>
-          Tribe helps tech+creative professionals find consistent work and pay
-          by joining a community of highly motivated professionals.
-        </p>
         <div>
           <g-image
             src="~/assets/images/misc/dexter.jpeg"
@@ -34,6 +30,10 @@
             alt="man looks outward"
           />
         </div>
+        <p class="tw-hidden md:tw-block">
+          Tribe helps tech+creative professionals find consistent work and pay
+          by joining a community of highly motivated professionals.
+        </p>
         <g-link class="nav__link btn btn-primary" to="/join">Earn More</g-link>
       </section>
 
