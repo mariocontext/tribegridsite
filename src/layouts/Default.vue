@@ -5,16 +5,20 @@
         <TribeLogo />
       </span>
       <span
-        v-on:click="showdrawer = !showdrawer"
+        @click="toggleNav"
         class="ctw-open-nav tw-inline-block tw-absolute tw-pin-r tw-pin-t tw-mt-8 tw-mr-4 tw-cursor-pointer md:tw-hidden"
       >
         <OpenIcon />
       </span>
       <transition name="slide">
-        <nav v-show="showdrawer" class="nav" aria-role="navigation">
+        <nav
+          class="nav"
+          aria-role="navigation"
+          :class="{ navactive: isActive }"
+        >
           <span
-            v-on:click="showdrawer = !showdrawer"
-            class="ctw-close-nav tw-inline-block tw-absolute tw-pin-r tw-pin-t tw-mt-4 tw-mr-4 tw-cursor-pointer"
+            @click="toggleNav"
+            class="ctw-close-nav tw-inline-block tw-absolute tw-pin-r tw-pin-t tw-mt-4 tw-mr-4 tw-cursor-pointer md:tw-hidden"
           >
             <CloseIcon />
           </span>
@@ -141,18 +145,29 @@ export default {
     OpenIcon,
     CloseIcon
   },
-  data() {
+  data: function() {
     return {
-      showdrawer: false
+      isActive: false
     };
+  },
+  methods: {
+    toggleNav: function(isActive) {
+      this.isActive = !this.isActive;
+      console.log("hello");
+    }
   }
 };
 </script>
 
 <style>
-.nav {
-  @apply tw-p-8 tw--ml-4 tw--mr-4 tw-flex tw-flex-col tw-items-center tw-bg-tertiary tw-justify-around tw-fixed tw-w-full tw-pin-t tw-shadow-lg tw-z-50;
+.navactive {
+  @apply tw-flex !important;
 }
+
+.nav {
+  @apply tw-p-8 tw--ml-4 tw--mr-4 tw-flex tw-flex-col tw-items-center tw-bg-tertiary tw-justify-around tw-fixed tw-w-full tw-pin-t tw-shadow-lg tw-z-50 tw-hidden;
+}
+
 .nav a {
   @apply tw-text-2xl tw-text-white tw-no-underline tw-font-bold;
   transition: color 0.5s ease-in;
@@ -178,5 +193,20 @@ export default {
 .slide-enter, .slide-leave-to
 /* .slide-leave-active below version 2.1.8 */ {
   transform: translateX(256px);
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    @apply tw-bg-transparent tw-static tw-shadow-none tw-flex;
+  }
+  .nav ul {
+    @apply tw-absolute tw-pin-t tw-pin-r tw-mt-4 tw-mr-4;
+  }
+  .nav ul li {
+    @apply tw-inline-block;
+  }
+  .nav a {
+    @apply tw-text-sm tw-text-orange;
+  }
 }
 </style>
