@@ -6,7 +6,7 @@
       </span>
       <span
         v-on:click="showdrawer = !showdrawer"
-        class="ctw-open-nav tw-inline-block tw-absolute tw-pin-r tw-pin-t tw-mt-8 tw-mr-4 tw-cursor-pointer"
+        class="ctw-open-nav tw-inline-block tw-absolute tw-pin-r tw-pin-t tw-mt-8 tw-mr-4 tw-cursor-pointer md:tw-hidden"
       >
         <OpenIcon />
       </span>

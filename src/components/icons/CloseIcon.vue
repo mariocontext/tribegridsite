@@ -1,4 +1,5 @@
 <template>
+<span class="md:tw-hidden"
   <svg
     width="26"
     height="25"
@@ -28,4 +29,5 @@
       stroke-linejoin="round"
     />
   </svg>
+  </span>
 </template>
