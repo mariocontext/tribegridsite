@@ -22,7 +22,7 @@
       </section>
 
       <section>
-        <h1>Freelancing is harder</h1>
+        <h1 class="tw-text-right">Freelancing is harder</h1>
         <div>
           <g-image
             src="~/assets/images/misc/dexter.jpeg"
@@ -34,10 +34,12 @@
           Tribe helps tech+creative professionals find consistent work and pay
           by joining a community of highly motivated professionals.
         </p>
-        <g-link class="nav__link btn btn-primary" to="/join">Earn More</g-link>
+        <g-link class="nav__link btn btn-primary tw-float-right" to="/join"
+          >Earn More</g-link
+        >
       </section>
 
-      <section>
+      <section class="tw-mt-16">
         <h2>Find great talent</h2>
         <p>
           Tribe is the only worker owned staffing platform. Find local and
@@ -63,7 +65,7 @@
       <RoleListing />
 
       <section>
-        <h2>How it works</h2>
+        <h2 class="tw-text-center">How it works</h2>
         <div>
           <iframe
             class="embedly-embed"

@@ -1,6 +1,6 @@
 <template>
   <div
-    class="member-profile-container tw-bg-neutral tw-rounded tw-p-4 tw-shadow-lg"
+    class="member-profile-container tw-bg-neutral tw-rounded tw-p-4 tw-shadow-lg tw-mt-4 tw-mb-4"
   >
     <div class="tw-flex tw-flex-row tw-justify-between tw-items-center tw-mb-2">
       <span class="tw-text-lg tw-font-bold tw-pl-4"

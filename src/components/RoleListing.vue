@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="tw-mt-4 tw-mb-4">
     <h2 class="tw-text-right">Find great jobs</h2>
     <p class="tw-text-right">
       Tribe is the only worker owned staffing platform. Find local and remote
@@ -17,7 +17,9 @@
       <li>Graphic Design</li>
       <li>Quality Assurance</li>
     </ul>
-    <a href="#" class="btn btn-primary">Find more jobs</a>
+    <a href="#" class="btn btn-primary tw-mx-auto tw-w-48 tw-block"
+      >Find more jobs</a
+    >
   </section>
 </template>
 
