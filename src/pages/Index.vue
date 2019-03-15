@@ -78,7 +78,7 @@
       </section>
 
       <section
-        class="tw-bg-secondary tw-flex tw-flex-col tw-justify-around tw-p-4 tw-mt-8 tw-mb-8 tw--ml-4 tw--mr-4"
+        class="tw-bg-secondary tw-flex tw-flex-col tw-justify-around tw-p-4 tw-mt-8 tw--ml-4 tw--mr-4"
       >
         <div class="tw-self-start">
           <g-image
@@ -126,12 +126,12 @@
         </div>
       </section>
 
-      <section>
-        <h2>Questions?</h2>
+      <section class="tw-bg-tertiary tw-text-white tw-p-8 tw--ml-4 tw--mr-4">
+        <h2 class="tw-text-left">Questions?</h2>
         <p>Schedule a call to get started</p>
         <a
           href="https://app.prosperworks.com/public/meeting-scheduler/The%20Staffing%20Cooperative/joseph/253546:d9f04345-3420-4d5c-823d-c50395d7022e"
-          class="btn btn-primary"
+          class="btn btn-primary tw-block tw-w-48 tw-mx-auto"
           >Schedule a call</a
         >
       </section>
