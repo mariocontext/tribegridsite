@@ -126,9 +126,11 @@
         </div>
       </section>
 
-      <section class="tw-bg-tertiary tw-text-white tw-p-8 tw--ml-4 tw--mr-4">
-        <h2 class="tw-text-left">Questions?</h2>
-        <p>Schedule a call to get started</p>
+      <section
+        class="tw-bg-tertiary tw-text-white tw-pl-8 tw-pr-8 tw-pt-4 tw-pb-4 tw--ml-4 tw--mr-4"
+      >
+        <p class="tw-text-left tw-text-base">Questions?</p>
+        <p class="tw-text-lg">Schedule a call to get started</p>
         <a
           href="https://app.prosperworks.com/public/meeting-scheduler/The%20Staffing%20Cooperative/joseph/253546:d9f04345-3420-4d5c-823d-c50395d7022e"
           class="btn btn-primary tw-block tw-w-48 tw-mx-auto"
