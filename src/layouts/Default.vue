@@ -4,7 +4,74 @@
       <span>
         <TribeLogo />
       </span>
-      <nav class="nav" aria-role="navigation">
+      <span
+        class="ctw-open-nav tw-inline-block tw-absolute tw-pin-r tw-pin-t tw-mt-8 tw-mr-4 tw-cursor-pointer"
+      >
+        <svg
+          width="26"
+          height="18"
+          viewBox="0 0 26 18"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <title>Open Navigation</title>
+          <path
+            d="M1.625 1.99432H24.0359"
+            stroke="#18F2B2"
+            stroke-width="3"
+            stroke-linecap="round"
+          />
+          <path
+            d="M1.625 9.15341H24.0359"
+            stroke="#18F2B2"
+            stroke-width="3"
+            stroke-linecap="round"
+          />
+          <path
+            d="M1.625 16.3125H24.0359"
+            stroke="#18F2B2"
+            stroke-width="3"
+            stroke-linecap="round"
+          />
+        </svg>
+      </span>
+      <nav
+        class="nav tw-p-8 tw--ml-4 tw--mr-4 tw-flex tw-flex-col tw-items-center tw-bg-tertiary tw-justify-around tw-fixed tw-w-full tw-pin-t"
+        aria-role="navigation"
+      >
+        <span
+          class="ctw-close-nav tw-inline-block tw-absolute tw-pin-r tw-pin-t tw-mt-4 tw-mr-4 tw-cursor-pointer"
+        >
+          <svg
+            width="26"
+            height="25"
+            viewBox="0 0 26 25"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>Close Navigation</title>
+            <line
+              x1="4.12132"
+              y1="3"
+              x2="23.3776"
+              y2="22.2562"
+              stroke="#18F2B2"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <line
+              x1="3"
+              y1="22.2562"
+              x2="22.2562"
+              y2="3"
+              stroke="#18F2B2"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </span>
         <ul>
           <li>
             <g-link class="nav__link" to="/">Home</g-link>
@@ -18,6 +85,7 @@
           <li>
             <a
               href="https://app.prosperworks.com/public/meeting-scheduler/The%20Staffing%20Cooperative/joseph/253546:d9f04345-3420-4d5c-823d-c50395d7022e"
+              class="tw-text-2xl tw-text-white tw-no-underline;"
               >Contact Us</a
             >
           </li>
@@ -123,4 +191,21 @@ export default {
 </script>
 
 <style>
+.nav a {
+  @apply tw-text-2xl tw-text-white tw-no-underline tw-font-bold;
+  transition: color 0.5s ease-in;
+}
+
+.nav a:hover {
+  @apply tw-text-secondary;
+}
+
+.nav .active--exact,
+.nav a:focus {
+  @apply tw-text-secondary;
+}
+
+.nav li {
+  @apply tw-p-6 tw-text-center;
+}
 </style>
