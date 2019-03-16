@@ -1,6 +1,6 @@
 <template>
-  <section>
-    <h2>How Tribe is Making Hiring Easy</h2>
+  <section class="ctw-benefits-listing tw-hidden sm:tw-block tw-mt-4 tw-mb-4">
+    <h2 class="tw-mb-4">How Tribe is Making Hiring Easy</h2>
     <div>
       <h3>Post a Job for Free</h3>
       <p>
@@ -39,6 +39,13 @@
     </div>
   </section>
 </template>
+
+<style scoped>
+.ctw-benefits-listing > div {
+  @apply tw-pt-2 tw-pb-2 tw-border-b tw-border-secondary;
+}
+</style>
+
 
 <script>
 </script>
