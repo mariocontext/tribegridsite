@@ -49,15 +49,18 @@
 
         <div class="layout tw-container tw-mx-auto tw-pl-4 tw-pr-4 tw-z-10">
           <slot />
-          <footer
-            role="contentinfo"
-            class="main-footer tw-bg-tertiary tw-text-white tw--mr-4 tw--ml-4 tw-pl-4 tw-pr-4 tw-mt-8"
-          >
+        </div>
+
+        <footer
+          role="contentinfo"
+          class="main-footer tw-bg-tertiary tw-text-white tw--mr-4 tw--ml-4 tw-pl-4 tw-pr-4 tw-mt-8"
+        >
+          <div class="tw-flex tw-flex-col md:tw-flex-row md:tw-justify-center">
             <section>
               <div class="tw-text-center tw-pb-4">
-                <TribeLogo />
+                <TribeLogoLarge />
               </div>
-              <p class="tw-pb-4 tw-max-w-xs tw-mx-auto">
+              <p class="tw-pb-4 tw-max-w-xs tw-mx-auto tw-text-base">
                 Tribe is the only worker owned talent platform. Bringing
                 ownership to the future of work. Subscribe to get the latest
                 updates from the co-op's blog.
@@ -85,80 +88,82 @@
                 />
               </form>
             </section>
-            <section class="contact-us tw-text-center">
-              <h3>Contact Us</h3>
-              <ul class="">
-                <li>
-                  <a
-                    href="mailto:info@tribestaffing.co"
-                    class="tw-text-secondary tw-no-underline"
-                    >Email</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://app.prosperworks.com/public/meeting-scheduler/The%20Staffing%20Cooperative/joseph/253546:d9f04345-3420-4d5c-823d-c50395d7022e/2019-03-13"
-                    class="tw-text-secondary tw-no-underline"
-                    >Call</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://app.prosperworks.com/public/meeting-scheduler/The%20Staffing%20Cooperative/joseph/253546:d9f04345-3420-4d5c-823d-c50395d7022e/2019-03-13"
-                    class="tw-text-secondary tw-no-underline"
-                    >Grab Coffee</a
-                  >
-                </li>
-              </ul>
-            </section>
-            <section class="follow-us">
-              <h3 class="tw-text-center">Follow Us</h3>
-              <ul>
-                <li>
-                  <a href="https://twitter.com/TribeStaffing">
-                    <div class="tw-text-center">
-                      <g-image
-                        src="~/assets/images/external_brand_logos/twitterLogo.png"
-                        alt=""
-                        width="30"
-                        height="25"
-                      />
-                    </div>
-                    <div class="tw-text-center tw-pt-4">Twitter</div></a
-                  >
-                </li>
-                <li>
-                  <a href="https://www.instagram.com/tribestaffing/">
-                    <div class="tw-text-center">
-                      <g-image
-                        src="~/assets/images/external_brand_logos/instagramLogo.png"
-                        alt=""
-                        width="25"
-                        height="25"
-                      />
-                    </div>
-                    <div class="tw-text-center tw-pt-4">Instagram</div></a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.linkedin.com/company/tribe-staffing-coop"
-                  >
-                    <div class="tw-text-center">
-                      <g-image
-                        src="~/assets/images/external_brand_logos/linkedInLogo.png"
-                        alt=""
-                        width="25"
-                        height="25"
-                      />
-                    </div>
-                    <div class="tw-text-center tw-pt-4">LinkedIn</div></a
-                  >
-                </li>
-              </ul>
+            <section>
+              <section class="contact-us tw-text-center">
+                <h3>Contact Us</h3>
+                <ul class="">
+                  <li>
+                    <a
+                      href="mailto:info@tribestaffing.co"
+                      class="tw-text-secondary tw-no-underline"
+                      >Email</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://app.prosperworks.com/public/meeting-scheduler/The%20Staffing%20Cooperative/joseph/253546:d9f04345-3420-4d5c-823d-c50395d7022e/2019-03-13"
+                      class="tw-text-secondary tw-no-underline"
+                      >Call</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://app.prosperworks.com/public/meeting-scheduler/The%20Staffing%20Cooperative/joseph/253546:d9f04345-3420-4d5c-823d-c50395d7022e/2019-03-13"
+                      class="tw-text-secondary tw-no-underline"
+                      >Grab Coffee</a
+                    >
+                  </li>
+                </ul>
+              </section>
+              <section class="follow-us">
+                <h3 class="tw-text-center">Follow Us</h3>
+                <ul>
+                  <li>
+                    <a href="https://twitter.com/TribeStaffing">
+                      <div class="tw-text-center">
+                        <g-image
+                          src="~/assets/images/external_brand_logos/twitterLogo.png"
+                          alt=""
+                          width="30"
+                          height="25"
+                        />
+                      </div>
+                      <div class="tw-text-center tw-pt-4">Twitter</div></a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com/tribestaffing/">
+                      <div class="tw-text-center">
+                        <g-image
+                          src="~/assets/images/external_brand_logos/instagramLogo.png"
+                          alt=""
+                          width="25"
+                          height="25"
+                        />
+                      </div>
+                      <div class="tw-text-center tw-pt-4">Instagram</div></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/company/tribe-staffing-coop"
+                    >
+                      <div class="tw-text-center">
+                        <g-image
+                          src="~/assets/images/external_brand_logos/linkedInLogo.png"
+                          alt=""
+                          width="25"
+                          height="25"
+                        />
+                      </div>
+                      <div class="tw-text-center tw-pt-4">LinkedIn</div></a
+                    >
+                  </li>
+                </ul>
+              </section>
             </section>
 
-            <section class="good-to-know tw-text-center">
+            <section class="good-to-know tw-hidden tw-text-center">
               <h4>Good to Know</h4>
               <nav>
                 <ul>
@@ -173,11 +178,11 @@
                 </ul>
               </nav>
             </section>
-            <p class="tw-pt-4 tw-pb-8 tw-text-center">
-              © 2019 Tribe Staffing, Inc.
-            </p>
-          </footer>
-        </div>
+          </div>
+          <p class="tw-pt-4 tw-pb-8 tw-text-center">
+            © 2019 Tribe Staffing, Inc.
+          </p>
+        </footer>
       </span>
     </span>
   </span>
@@ -193,12 +198,14 @@ query {
 
 <script>
 import TribeLogo from "~/components/TribeLogo.vue";
+import TribeLogoLarge from "~/components/TribeLogoLarge.vue";
 import OpenIcon from "~/components/icons/OpenIcon.vue";
 import CloseIcon from "~/components/icons/CloseIcon.vue";
 
 export default {
   components: {
     TribeLogo,
+    TribeLogoLarge,
     OpenIcon,
     CloseIcon
   },
