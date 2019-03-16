@@ -11,4 +11,4 @@
 1. `gridsome create my-gridsome-site` to install default starter </li>
 2. `cd my-gridsome-site` to open folder
 3. `gridsome develop` to start local dev server at `http://localhost:8080`
-4. Happy coding 🎉🙌!!!
+4. Happy coding all 🎉🙌!!!
