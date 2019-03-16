@@ -73,6 +73,7 @@ h4,
 h5,
 h6 {
   @apply tw-leading-normal;
+  @apply tw-pt-4 tw-pb-2;
 }
 
 h1 {
