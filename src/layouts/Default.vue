@@ -49,9 +49,12 @@
 
         <div class="layout tw-container tw-mx-auto tw-pl-4 tw-pr-4 tw-z-10">
           <slot />
-          <footer role="contentinfo">
+          <footer
+            role="contentinfo"
+            class="tw-bg-tertiary tw-text-white tw--mr-4 tw--ml-4 tw-pl-4 tw-pr-4"
+          >
             <section>
-              <div>
+              <div class="tw-text-center tw-pb-4">
                 <TribeLogo />
               </div>
               <p>
@@ -59,7 +62,7 @@
                 ownership to the future of work. Subscribe to get the latest
                 updates from the co-op's blog.
               </p>
-              <h4>Contact us</h4>
+
               <form
                 id="subscribe-form"
                 name="subscribe-form"
@@ -80,26 +83,44 @@
                   class="btn btn-primary"
                 />
               </form>
+            </section>
+            <section>
+              <h3>Contact Us</h3>
+              <p><a href="mailto:info@tribestaffing.co">Email</a>Email</p>
               <p>
-                Call:
                 <a
                   href="https://app.prosperworks.com/public/meeting-scheduler/The%20Staffing%20Cooperative/joseph/253546:d9f04345-3420-4d5c-823d-c50395d7022e/2019-03-13"
                   class="btn btn-primary"
-                  >Set up a call</a
+                  >Call</a
+                >
+              </p>
+              <p>
+                <a
+                  href="https://app.prosperworks.com/public/meeting-scheduler/The%20Staffing%20Cooperative/joseph/253546:d9f04345-3420-4d5c-823d-c50395d7022e/2019-03-13"
+                  class="btn btn-primary"
+                  >Grab Coffee</a
                 >
               </p>
               <h3>Follow Us</h3>
-              <ul>
+              <ul class="tw-uppercase tw-no-underline">
                 <li>
-                  <a href="https://twitter.com/TribeStaffing">Twitter</a>
+                  <a
+                    class="tw-no-underline"
+                    href="https://twitter.com/TribeStaffing"
+                    >Twitter</a
+                  >
                 </li>
                 <li>
-                  <a href="https://www.instagram.com/tribestaffing/"
+                  <a
+                    class="tw-no-underline"
+                    href="https://www.instagram.com/tribestaffing/"
                     >Instagram</a
                   >
                 </li>
                 <li>
-                  <a href="https://www.linkedin.com/company/tribe-staffing-coop"
+                  <a
+                    class="tw-no-underline"
+                    href="https://www.linkedin.com/company/tribe-staffing-coop"
                     >LinkedIn</a
                   >
                 </li>
@@ -195,15 +216,6 @@ export default {
 
 .nav li {
   @apply tw-p-6 tw-text-center;
-}
-
-.slide-enter-active,
-.slide-leave-active {
-  transition: all 0.3s ease-in-out;
-}
-.slide-enter, .slide-leave-to
-/* .slide-leave-active below version 2.1.8 */ {
-  transform: translateX(256px);
 }
 
 @media screen and (min-width: 768px) {
