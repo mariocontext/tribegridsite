@@ -36,10 +36,137 @@
   * @import "components/forms";
   */
 
-.my-special-class {
-  @apply tw-bg-grey;
+html,
+body {
+  font-family: "Montserrat", "Roboto", sans-serif;
+  @apply tw-text-tertiary;
 }
 
+body {
+  @apply tw-text-xs;
+}
+
+.ctw-content-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.tribe-header-bg {
+  width: 100%;
+  background-image: linear-gradient(
+      175deg,
+      #001f48,
+      #001f47 29%,
+      #18f2b2 45%,
+      #fff 93%
+    ),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-size: 100% 784px;
+  display: block;
+  background-repeat: no-repeat;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply tw-leading-normal;
+}
+
+h1 {
+  @apply tw-text-4xl;
+}
+
+main > section:first-child > h1:first-child {
+  @apply tw-text-secondary;
+}
+
+h2 {
+  @apply tw-text-3xl;
+}
+
+h3 {
+  @apply tw-text-2xl;
+}
+
+h4 {
+  @apply tw-text-xl;
+}
+
+h5 {
+  @apply tw-text-lg;
+}
+
+h5 {
+  @apply tw-text-base;
+}
+
+p {
+  @apply tw-leading-normal;
+}
+
+ul {
+  @apply tw-list-reset;
+}
+
+a {
+  @apply tw-text-tertiary;
+}
+label {
+  @apply tw-block tw-text-xs tw-font-medium tw-mt-4 tw-mb-2;
+}
+
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="url"],
+textarea,
+select {
+  @apply tw-border tw-border-solid tw-border-tertiary tw-h-8 tw-p-2 tw-text-tertiary tw-w-full tw-max-w-xs tw-bg-teal-lightest;
+}
+
+button,
+.btn {
+  font-family: "Montserrat", "Roboto", sans-serif;
+  @apply tw-inline-block tw-pt-2 tw-pb-2 tw-pl-8 tw-pr-8 tw-mt-4 tw-mb-4 tw-text-tertiary tw-no-underline tw-capitalize tw-text-center tw-text-base tw-font-medium tw-cursor-pointer;
+}
+
+button:hover,
+.btn:hover {
+  @apply tw-text-blue-darker;
+}
+
+.btn-primary {
+  @apply tw-text-white tw-bg-tertiary tw-capitalize tw-border tw-border-solid tw-border-white tw-rounded-lg tw-shadow-md;
+  transition: background 0.5s ease-in;
+}
+
+.btn-primary:hover {
+  @apply tw-text-white tw-bg-grey-darkest;
+}
+
+/* RWD video fix */
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 /**
   * This injects all of Tailwind's utility classes, generated based on your
   * config file.
@@ -64,7 +191,3 @@
   * @import "utilities/background-patterns";
   * @import "utilities/skew-transforms";
   */
-
-h1 {
-  font-family: "Montserrat", "Roboto", sans-serif;
-}
