@@ -3,20 +3,21 @@
     <!-- Learn how to use images here: https://gridsome.org/docs/images -->
 
     <main>
-      <section>
-        <h1>Hiring is Hard</h1>
+      <section class="tw-mt-8">
+        <h1 class="ctw-hero-title tw-text-white">Hiring is Hard</h1>
         <div>
           <g-image
             src="~/assets/images/misc/two-people.jpeg"
             width="320"
             alt="woman speaking to a group of people"
+            class="ctw-hero-image"
           />
         </div>
-        <p class="tw-hidden md:tw-block">
+        <p class="tw-hidden md:tw-block ctw-hero-text">
           Tribe makes Hiring Easier by directly connecting companies to
           tech+creative talent
         </p>
-        <g-link class="nav__link btn btn-primary" to="/hire"
+        <g-link class="nav__link btn btn-primary ctw-hero-cta" to="/hire"
           >Make it Easy</g-link
         >
       </section>
@@ -144,6 +145,35 @@
     </main>
   </Layout>
 </template>
+
+<style scoped>
+.ctw-hero-title {
+  @apply tw-text-white !important;
+  @pply tw-shadow;
+  position: relative;
+  top: 60px;
+  width: 60px;
+  z-index: 20;
+}
+.ctw-hero-image {
+  position: relative;
+  left: 60px;
+  top: -30px;
+  z-index: 10;
+}
+.ctw-hero-cta {
+  position: relative;
+  left: 10%;
+  top: -160px;
+  z-index: 15;
+}
+.ctw-hero-text {
+  @apply tw-text-secondary tw-text-base tw-text-white;
+  width: 300px;
+  position: relative;
+}
+</style>
+
 
 <script>
 import HireBenefits from "~/components/HireBenefits.vue";

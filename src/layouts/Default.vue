@@ -1,134 +1,140 @@
 <template>
   <span>
     <span class="tribe-header-bg">
-      <!-- actual content begins here -->
-      <header class="header" aria-role="banner">
-        <span class="tw-p-4">
-          <TribeLogo />
-        </span>
-        <span
-          @click="toggleNav"
-          class="ctw-open-nav tw-inline-block tw-absolute tw-pin-r tw-pin-t tw-mt-8 tw-mr-4 tw-cursor-pointer md:tw-hidden"
+      <span class="ctw-content-container md:tw-max-w-3xl">
+        <header
+          class="header md:tw-flex md:tw-container md:tw-max-w-3xl md:tw-mx-auto md:tw-justify-between"
+          aria-role="banner"
         >
-          <OpenIcon />
-        </span>
-        <transition name="slide">
-          <nav
-            class="nav"
-            aria-role="navigation"
-            :class="{ navactive: isActive }"
+          <span class="tw-p-4 mx:tw-self-start">
+            <TribeLogo />
+          </span>
+          <span
+            @click="toggleNav"
+            class="ctw-open-nav tw-inline-block tw-absolute tw-pin-r tw-pin-t tw-mt-8 tw-mr-4 tw-cursor-pointer md:tw-hidden"
           >
-            <span
-              @click="toggleNav"
-              class="ctw-close-nav tw-inline-block tw-absolute tw-pin-r tw-pin-t tw-mt-4 tw-mr-4 tw-cursor-pointer md:tw-hidden"
+            <OpenIcon />
+          </span>
+          <transition name="slide">
+            <nav
+              class="nav"
+              aria-role="navigation"
+              :class="{ navactive: isActive }"
             >
-              <CloseIcon />
-            </span>
-            <ul>
-              <li>
-                <g-link class="nav__link" to="/">Home</g-link>
-              </li>
-              <li>
-                <g-link class="nav__link" to="/hire">Hire</g-link>
-              </li>
-              <li>
-                <g-link class="nav__link" to="/join">Join</g-link>
-              </li>
-              <li>
-                <a
-                  href="https://app.prosperworks.com/public/meeting-scheduler/The%20Staffing%20Cooperative/joseph/253546:d9f04345-3420-4d5c-823d-c50395d7022e"
-                  class="tw-text-2xl tw-text-white tw-no-underline;"
-                  >Contact Us</a
-                >
-              </li>
-            </ul>
-          </nav>
-        </transition>
-      </header>
-
-      <div class="layout tw-container tw-mx-auto tw-pl-4 tw-pr-4 tw-z-10">
-        <slot />
-        <footer role="contentinfo">
-          <section>
-            <div>
-              <TribeLogo />
-            </div>
-            <p>
-              Tribe is the only worker owned talent platform. Bringing ownership
-              to the future of work. Subscribe to get the latest updates from
-              the co-op's blog.
-            </p>
-            <h4>Contact us</h4>
-            <form
-              id="subscribe-form"
-              name="subscribe-form"
-              data-name="Subscribe Form"
-            >
-              <input
-                type="email"
-                maxlength="256"
-                name="subscribe-email"
-                data-name="Subscribe Email"
-                placeholder="Jane@email.com"
-                id="subscribe-email"
-                required=""
-              /><input
-                type="submit"
-                value="Get Updates"
-                data-wait="In the mail!"
-                class="btn btn-primary"
-              />
-            </form>
-            <p>
-              Call:
-              <a
-                href="https://app.prosperworks.com/public/meeting-scheduler/The%20Staffing%20Cooperative/joseph/253546:d9f04345-3420-4d5c-823d-c50395d7022e/2019-03-13"
-                class="btn btn-primary"
-                >Set up a call</a
+              <span
+                @click="toggleNav"
+                class="ctw-close-nav tw-inline-block tw-absolute tw-pin-r tw-pin-t tw-mt-4 tw-mr-4 tw-cursor-pointer md:tw-hidden"
               >
-            </p>
-            <h3>Follow Us</h3>
-            <ul>
-              <li>
-                <a href="https://twitter.com/TribeStaffing">Twitter</a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com/tribestaffing/">Instagram</a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/company/tribe-staffing-coop"
-                  >LinkedIn</a
-                >
-              </li>
-            </ul>
-          </section>
-
-          <section>
-            <h3>Good to Know</h3>
-            <nav>
-              <ul>
+                <CloseIcon />
+              </span>
+              <ul class="mx:tw-self-end">
                 <li>
-                  <g-link class="nav__link btn" to="/terms"
-                    >Terms of use</g-link
-                  >
+                  <g-link class="nav__link" to="/">Home</g-link>
                 </li>
                 <li>
-                  <g-link class="nav__link" to="/privacy"
-                    >Privacy policy</g-link
-                  >
+                  <g-link class="nav__link" to="/hire">Hire</g-link>
+                </li>
+                <li>
+                  <g-link class="nav__link" to="/join">Join</g-link>
                 </li>
                 <li>
                   <a
                     href="https://app.prosperworks.com/public/meeting-scheduler/The%20Staffing%20Cooperative/joseph/253546:d9f04345-3420-4d5c-823d-c50395d7022e"
+                    class="tw-text-2xl tw-text-white tw-no-underline;"
                     >Contact Us</a
                   >
                 </li>
               </ul>
             </nav>
-          </section>
-          <p>© 2019 Tribe Staffing, Inc.</p>
-        </footer>
-      </div>
+          </transition>
+        </header>
+
+        <div class="layout tw-container tw-mx-auto tw-pl-4 tw-pr-4 tw-z-10">
+          <slot />
+          <footer role="contentinfo">
+            <section>
+              <div>
+                <TribeLogo />
+              </div>
+              <p>
+                Tribe is the only worker owned talent platform. Bringing
+                ownership to the future of work. Subscribe to get the latest
+                updates from the co-op's blog.
+              </p>
+              <h4>Contact us</h4>
+              <form
+                id="subscribe-form"
+                name="subscribe-form"
+                data-name="Subscribe Form"
+              >
+                <input
+                  type="email"
+                  maxlength="256"
+                  name="subscribe-email"
+                  data-name="Subscribe Email"
+                  placeholder="Jane@email.com"
+                  id="subscribe-email"
+                  required=""
+                /><input
+                  type="submit"
+                  value="Get Updates"
+                  data-wait="In the mail!"
+                  class="btn btn-primary"
+                />
+              </form>
+              <p>
+                Call:
+                <a
+                  href="https://app.prosperworks.com/public/meeting-scheduler/The%20Staffing%20Cooperative/joseph/253546:d9f04345-3420-4d5c-823d-c50395d7022e/2019-03-13"
+                  class="btn btn-primary"
+                  >Set up a call</a
+                >
+              </p>
+              <h3>Follow Us</h3>
+              <ul>
+                <li>
+                  <a href="https://twitter.com/TribeStaffing">Twitter</a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/tribestaffing/"
+                    >Instagram</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/company/tribe-staffing-coop"
+                    >LinkedIn</a
+                  >
+                </li>
+              </ul>
+            </section>
+
+            <section>
+              <h3>Good to Know</h3>
+              <nav>
+                <ul>
+                  <li>
+                    <g-link class="nav__link btn" to="/terms"
+                      >Terms of use</g-link
+                    >
+                  </li>
+                  <li>
+                    <g-link class="nav__link" to="/privacy"
+                      >Privacy policy</g-link
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://app.prosperworks.com/public/meeting-scheduler/The%20Staffing%20Cooperative/joseph/253546:d9f04345-3420-4d5c-823d-c50395d7022e"
+                      >Contact Us</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </section>
+            <p>© 2019 Tribe Staffing, Inc.</p>
+          </footer>
+        </div>
+      </span>
     </span>
   </span>
 </template>
@@ -204,10 +210,10 @@ export default {
 
 @media screen and (min-width: 768px) {
   .nav {
-    @apply tw-bg-transparent tw-static tw-shadow-none tw-flex;
+    @apply tw-bg-transparent tw-static tw-shadow-none tw-flex tw-flex-row;
   }
   .nav ul {
-    @apply tw-absolute tw-pin-t tw-pin-r tw-mt-4 tw-mr-4;
+    @apply tw-absolute tw-pin-t tw-self-end tw-mt-4 tw-mr-4 tw-self-end;
   }
   .nav ul li {
     @apply tw-inline-block;
