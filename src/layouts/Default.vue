@@ -51,7 +51,7 @@
           <slot />
           <footer
             role="contentinfo"
-            class="main-footer tw-bg-tertiary tw-text-white tw--mr-4 tw--ml-4 tw-pl-4 tw-pr-4"
+            class="main-footer tw-bg-tertiary tw-text-white tw--mr-4 tw--ml-4 tw-pl-4 tw-pr-4 tw-mt-8"
           >
             <section>
               <div class="tw-text-center tw-pb-4">
@@ -115,23 +115,51 @@
               <h3 class="tw-text-center">Follow Us</h3>
               <ul>
                 <li>
-                  <a href="https://twitter.com/TribeStaffing">Twitter</a>
-                </li>
-                <li>
-                  <a href="https://www.instagram.com/tribestaffing/"
-                    >Instagram</a
+                  <a href="https://twitter.com/TribeStaffing">
+                    <div class="tw-text-center">
+                      <g-image
+                        src="~/assets/images/external_brand_logos/twitterLogo.png"
+                        alt=""
+                        width="30"
+                        height="25"
+                      />
+                    </div>
+                    <div class="tw-text-center tw-pt-4">Twitter</div></a
                   >
                 </li>
                 <li>
-                  <a href="https://www.linkedin.com/company/tribe-staffing-coop"
-                    >LinkedIn</a
+                  <a href="https://www.instagram.com/tribestaffing/">
+                    <div class="tw-text-center">
+                      <g-image
+                        src="~/assets/images/external_brand_logos/instagramLogo.png"
+                        alt=""
+                        width="25"
+                        height="25"
+                      />
+                    </div>
+                    <div class="tw-text-center tw-pt-4">Instagram</div></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/company/tribe-staffing-coop"
+                  >
+                    <div class="tw-text-center">
+                      <g-image
+                        src="~/assets/images/external_brand_logos/linkedInLogo.png"
+                        alt=""
+                        width="25"
+                        height="25"
+                      />
+                    </div>
+                    <div class="tw-text-center tw-pt-4">LinkedIn</div></a
                   >
                 </li>
               </ul>
             </section>
 
             <section class="good-to-know tw-text-center">
-              <h3>Good to Know</h3>
+              <h4>Good to Know</h4>
               <nav>
                 <ul>
                   <li>
@@ -234,8 +262,12 @@ export default {
   @apply tw-text-white tw-no-underline tw-text-base;
 }
 
-.main-footer .contact-us a {
+.main-footer a:hover {
   @apply tw-text-secondary;
+}
+
+.main-footer .contact-us a {
+  @apply tw-block tw-pt-4 tw-pb-4;
 }
 
 .main-footer .contact-us li {
@@ -247,7 +279,7 @@ export default {
 }
 
 .main-footer .follow-us ul li a {
-  @apply tw-text-xs tw-mr-4 tw-ml-4;
+  @apply tw-text-xs tw-mr-4 tw-ml-4 tw-p-6;
 }
 
 .good-to-know ul {
