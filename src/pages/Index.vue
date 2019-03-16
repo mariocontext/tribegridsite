@@ -3,7 +3,7 @@
     <!-- Learn how to use images here: https://gridsome.org/docs/images -->
 
     <main>
-      <section class="tw-mt-8">
+      <section class="main-hero tw-mt-8">
         <h1 class="ctw-hero-title tw-text-white">Hiring is Hard</h1>
         <div>
           <g-image
@@ -22,7 +22,7 @@
         >
       </section>
 
-      <section>
+      <section class="secondary-hero">
         <h1 class="tw-text-right">Freelancing is harder</h1>
         <div>
           <g-image
