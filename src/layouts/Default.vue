@@ -3,7 +3,7 @@
     <span class="tribe-header-bg">
       <span class="ctw-content-container md:tw-max-w-3xl">
         <header
-          class="header md:tw-flex md:tw-container md:tw-max-w-3xl md:tw-mx-auto md:tw-justify-between"
+          class="header md:tw-flex md:tw-max-w-3xl md:tw-mx-auto md:tw-justify-between md:tw-items-center"
           aria-role="banner"
         >
           <span class="tw-p-4 mx:tw-self-start">
@@ -15,38 +15,36 @@
           >
             <OpenIcon />
           </span>
-          <transition name="slide">
-            <nav
-              class="nav"
-              aria-role="navigation"
-              :class="{ navactive: isActive }"
+          <nav
+            class="nav"
+            aria-role="navigation"
+            :class="{ navactive: isActive }"
+          >
+            <span
+              @click="toggleNav"
+              class="ctw-close-nav tw-inline-block tw-absolute tw-pin-r tw-pin-t tw-mt-4 tw-mr-4 tw-cursor-pointer md:tw-hidden"
             >
-              <span
-                @click="toggleNav"
-                class="ctw-close-nav tw-inline-block tw-absolute tw-pin-r tw-pin-t tw-mt-4 tw-mr-4 tw-cursor-pointer md:tw-hidden"
-              >
-                <CloseIcon />
-              </span>
-              <ul class="mx:tw-self-end">
-                <li>
-                  <g-link class="nav__link" to="/">Home</g-link>
-                </li>
-                <li>
-                  <g-link class="nav__link" to="/hire">Hire</g-link>
-                </li>
-                <li>
-                  <g-link class="nav__link" to="/join">Join</g-link>
-                </li>
-                <li>
-                  <a
-                    href="https://app.prosperworks.com/public/meeting-scheduler/The%20Staffing%20Cooperative/joseph/253546:d9f04345-3420-4d5c-823d-c50395d7022e"
-                    class="tw-text-2xl tw-text-white tw-no-underline;"
-                    >Contact Us</a
-                  >
-                </li>
-              </ul>
-            </nav>
-          </transition>
+              <CloseIcon />
+            </span>
+            <ul class="mx:tw-self-end">
+              <li>
+                <g-link class="nav__link" to="/">Home</g-link>
+              </li>
+              <li>
+                <g-link class="nav__link" to="/hire">Hire</g-link>
+              </li>
+              <li>
+                <g-link class="nav__link" to="/join">Join</g-link>
+              </li>
+              <li>
+                <a
+                  href="https://app.prosperworks.com/public/meeting-scheduler/The%20Staffing%20Cooperative/joseph/253546:d9f04345-3420-4d5c-823d-c50395d7022e"
+                  class="tw-text-2xl tw-text-white tw-no-underline;"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </nav>
         </header>
 
         <div class="layout tw-container tw-mx-auto tw-pl-4 tw-pr-4 tw-z-10">
@@ -210,10 +208,10 @@ export default {
 
 @media screen and (min-width: 768px) {
   .nav {
-    @apply tw-bg-transparent tw-static tw-shadow-none tw-flex tw-flex-row;
+    @apply tw-bg-transparent tw-static tw-shadow-none tw-flex;
   }
   .nav ul {
-    @apply tw-absolute tw-pin-t tw-self-end tw-mt-4 tw-mr-4 tw-self-end;
+    @apply tw-self-end tw-pt-4 tw-pr-4;
   }
   .nav ul li {
     @apply tw-inline-block;
